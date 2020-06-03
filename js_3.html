@@ -1,0 +1,23 @@
+<head>  
+<title>js_3</title>
+</head>
+<body>
+<p>单击将出现五个数字</p>
+<button onClick="myFunction()">点我</button>
+<p id="demo"></p>
+<script>
+function myFunction(){
+	var x="",i;
+	for (i=0;i<5;i++){
+		x=x + "这个数字是" + i + "<br>";
+	}
+	document.getElementById("demo").innerHTML=x;
+}
+function closenewwin()
+{
+   newwin.close();
+}
+</script>
+<body>
+<a href="javascript:close()">关闭此次访问</a><br><br>
+</body>
