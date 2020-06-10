@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery_1</title>
+</head>
+<html>
+<head>
+<script src="jquery.min.js"></script>
+<script type="text/javascript"> 
+  $(document).ready(function(){  
+	    alert("欢迎");
+$(document).ready(function(){
+$(".flip").click(function(){
+    $(".panel").slideToggle("slow");
+  });
+});
+});
+</script>
+ 
+<style type="text/css"> 
+div.panel,p.flip
+{
+margin:10px;
+padding:10px;
+text-align:center;
+background:#ffe1ff;
+border:solid 1px #c3c3c3;
+}
+div.panel
+{
+height:120px;
+display:none;
+}
+</style>
+</head>
+ 
+<body>
+ 
+<div class="panel">
+<p>在我们的网站，你可以了解全国各民族的分布</p>
+<p>在我们的网站，你可以找到有关民族旅游的各类信息</p>
+</div>
+ 
+<p class="flip">欢迎来到中国民族分布网站</p>
+ 
+</body>
+</html>
+<body>
+</body>
+</html>
