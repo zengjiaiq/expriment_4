@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title>jquery_2</title>
+	<script src="jquery-1.1.3.pack.js"></script>
+
+	<script>
+	$(document).ready(function(){
+	 $("dd:not(:first)").hide(); 
+		$("dt a").click(function(){
+			$("dd:visible").slideUp("slow");
+			$(this).parent().next().slideDown("slow");
+			return false;
+		});
+	});
+	</script>
+   <style>
+	dl { width:300px; }
+	dl,dd { margin: 0; }
+	dt { background: #fffbdc; font-size: 30px; padding: 6px; margin:6px; }
+	dt a { color: #FF8447; }
+	dd a { color: #ff83fa;font-size: 25px; }
+	ul { list-style: none; padding: 6px; }
+	</style>
+
+</head>
+<body>
+<dl>
+
+<dt><a href="#">中国民族分布</a></dt>
+	<dd>
+	<ul>
+		<li><a href="#">民族分布示意图</a></li>
+		
+	</ul>
+	</dd>
+	<dt><a href="#">民族旅游介绍</a></dt>
+	<dd>
+	<ul>
+		<li><a href="#">民族旅游景点分布</a></li>
+		<li><a href="#">民族旅游特色介绍</a></li>
+		
+	</ul>
+	</dd>
+	
+</dl>
+</body>
+</html>
